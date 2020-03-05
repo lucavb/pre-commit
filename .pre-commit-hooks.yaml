@@ -11,3 +11,10 @@
   entry: '\b[fx](describe|it)\('
   language: pygrep
   files: \.spec\.(ts|js)$
+
+- id: ts-accessing-window
+  name: check for accessing window
+  description: 'Prevent writing to the window object'
+  entry: '\(?window( as any)?\)?\.(.)+\s=\s(.)+'
+  language: pygrep
+  types: [ts]

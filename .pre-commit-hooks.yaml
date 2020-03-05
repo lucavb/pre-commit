@@ -4,3 +4,10 @@
   entry: '\bconsole.(log|info)\('
   language: pygrep
   types: [ts]
+
+- id: ts-no-focus-test
+  name: check for xit/fdescribe/...
+  description: 'Prevent excluded / focused tests'
+  entry: '\b[fx](describe|it)\('
+  language: pygrep
+  files: \.spec\.(ts|js)$

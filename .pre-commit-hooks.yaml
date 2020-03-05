@@ -1,0 +1,6 @@
+- id: ts-no-console-log
+  name: check for console.()
+  description: 'Prevent console.log'
+  entry: '\bconsole.(log|info)\('
+  language: pygrep
+  types: [ts]

@@ -10,3 +10,5 @@ There are currently two hooks:
     * Reacts to console.(info|log) calls and rejects them
 * ts-no-focus-test
     * Reacts to \[fx\](describe|it) calls in .spec.ts / spec.js files
+* ts-accessing-window
+    * Reacts to attempts trying to write something to the window object

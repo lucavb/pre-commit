@@ -18,3 +18,10 @@
   entry: '\(?window( as any)?\)?\.(.)+\s=\s(.)+'
   language: pygrep
   types: [ts]
+
+- id: ts-debugger
+  name: check for debugger calls
+  description: 'Prevent calls to debugger'
+  entry: '\bdebugger'
+  language: pygrep
+  types: [ts]

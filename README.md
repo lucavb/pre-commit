@@ -12,3 +12,5 @@ There are currently two hooks:
     * Reacts to \[fx\](describe|it) calls in .spec.ts / spec.js files
 * ts-accessing-window
     * Reacts to attempts trying to write something to the window object
+* ts-debugger
+    * Reacts to calls to the debugger
